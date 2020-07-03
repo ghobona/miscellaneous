@@ -1,22 +1,11 @@
-openapi: 3.0.2
+openapi: 3.0.3
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/cportele/opf-style-api/1.0.0
 info:
-  version: 0.0.8
-  title: "OGC API - Styles - Part 1: Core"
-  termsOfService: 'http://www.opengeospatial.org/legal/'
-  contact:
-    name: "Open Geospatial Consortium (OGC)"
-    email: standards-team@ogc.org
-    url: 'https://www.ogc.org/contacts'
-  license:
-    name: OGC software license 1.0
-    url: 'http://www.ogc.org/ogc/software/1.0'
-  x-logo:
-    url: 'https://www.ogc.org/pub/www/files/OGC_Logo_2D_Blue_x_0_0.png'
-  description: >
-    This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.
-    
-    Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
-
+  title: |-
+    A Web API implementing OGC API Styles (DRAFT)
+  description: |-
     # Overview
     
     This is a draft implementation of 
@@ -29,10 +18,8 @@ info:
     * **Visual style editors** create, update and delete styles 
     for datasets that are shared by other Web APIs implementing 
     OGC API Features, OGC API Coverages or OGC API Tiles;
-
     * **Web APIs implementing OGC API Maps** fetch styles and 
     render spatial data (features or coverages) on the server;
-
     * **Map clients** fetch styles and render spatial data 
     (features or coverages) on the client.
 
@@ -44,14 +31,11 @@ info:
     * **Styles** organize a sequence of rules of symbolizing 
     instructions to be applied by a rendering engine on one 
     or more features and/or coverages.
-
     * **Style encodings** are specifications to express a style
     as one or more files. In Testbed-15 Mapbox Styles, OGC SLD
     versions 1.0 and 1.1 are used.
-
     * **Stylesheets** are representations of a style in a style 
     encoding.
-
     * **Style metadata** is essential information about a style
     in order to support users to discover and select styles for
     rendering their data and for visual style editors to create
@@ -99,21 +83,13 @@ info:
     The Style API specifies the following conformance classes.
     
     * **'core'** supports the basic GET operations on `/`, `/conformance`, `/styles`, `/styles/{styleId}`, and `/styles/{styleId}/metadata`. Support for media type `application/json` as a response to the GET operations on `/`, `/conformance`, `/styles`, and `/styles/{styleId}/metadata` is required.
-
     * **'html'** supports `text/html` as a response to the GET operations on `/`, `/conformance`, `/styles`, and `/styles/{styleId}/metadata`
-
     * **'manage-styles'** adds POST/PUT/DELETE/PATCH methods on `/styles`, `/styles/{styleId}`, and `/styles/{styleId}/metadata`
-
     * **'style-validation'** adds the `validate` parameter on POST requests to `/styles`
-
     * **'resources'** adds the basic GET operations on `/resources`, and `/resources/{resourceId}`
-
     * **'manage-resources'** adds POST/PUT/DELETE/PATCH methods on `/resources`, and `/resources/{resourceId}`
-
     * **'mapbox-styles'** supports Mapbox Styles as a style encoding on `/styles` and `/styles/{styleId}`
-
     * **'sld-10'** supports SLD 1.0 as a style encoding on `/styles` and `/styles/{styleId}`
-
     * **'sld-11'** supports SLD 1.1 as a style encoding on `/styles` and `/styles/{styleId}`
     
     # Examples how clients are expected to interact with the API
@@ -151,9 +127,7 @@ info:
     classes:
     
     * `http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core` and `http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson` 
-
     or 
-
     * `http://www.opengis.net/spec/ogcapi-tiles-1/1.0/conf/core`.
     
     The first one provides access to GeoJSON features via `{data}/collections/TransportationGroundCrv/items`,
@@ -165,7 +139,6 @@ info:
     class is supported, the visual style editor can specify styling rules that make use of
     feature properties. Otherwise all styling rules will apply to all features in each 
     collection.
-
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/style-links`: If this conformance 
     class is supported, the visual style editor will be able to create a link from the collection 
     to the newly created style.
@@ -189,25 +162,20 @@ info:
     the new style via the repository.
     
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/core`
-
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/json`
-
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/manage-styles`
     
     In addition, if the style includes symbols or sprites, the repository also has to 
     support the following conformance classes:
     
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/resources`
-
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/manage-resources`
     
     Finally, the repository has to support the native stylesheet language that the user 
     has selected for the style definition, i.e. one of:
     
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/mapbox-styles`
-
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/sld-10`
-
     * `http://www.opengis.net/spec/ogcapi-styles-1/1.0/conf/sld-11`
     
     The visual style editor will ask the user for her credentials (username and password)
@@ -242,12 +210,10 @@ info:
     will open/load the style from the style repository and the editor will fetch it 
     from `{styles}/styles/{stylename}` (using the stylesheet language of choice) 
     and its metadata from `{styles}/styles/{stylename}/metadata`.
-
     * If the style metadata includes links to sample data 
     (e.g., `{data}/collections/TransportationGroundCrv`), the editor may use that data for 
     sample visualizations and perhaps to determine changes to queryables. 
     The user may also select other data sources for these purposes.
-
     * Since an existing style is updated, the style definition will always be updated with 
     a PUT request to `{styles}/styles/{stylename}` (no POST request to `{styles}/styles`, which
     would create a new style).
@@ -261,6 +227,16 @@ info:
     can change the style. The stylesheet returned based on the `href` member of the link 
     will be used to render the data.
 
+ 
+    
+
+  version: "1.0.0"
+  contact:
+    name: Clemens Portele
+    email: portele@interactive-instruments.de
+  license:
+    name: OGC License
+    url: 'https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/LICENSE'
 tags:
   - name: Capabilities
     description: |-
