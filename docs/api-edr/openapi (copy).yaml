@@ -1,11 +1,42 @@
 openapi: 3.0.2
 info:
-  title: Environmental Data Retrieval API's
-  description: Example of Candidate Environmental Data Retrieval API OpenAPI docs
   version: 0.0.8
-servers:
-  - url: 'http://www.example.org/edr'
-    description: ''
+  title: "Environmental Data Retrieval API"
+  termsOfService: 'http://www.opengeospatial.org/legal/'
+  contact:
+    name: "Open Geospatial Consortium (OGC)"
+    email: standards-team@ogc.org
+    url: 'https://www.ogc.org/contacts'
+  license:
+    name: OGC software license 1.0
+    url: 'http://www.ogc.org/ogc/software/1.0'
+  x-logo:
+    url: 'https://www.ogc.org/pub/www/files/OGC_Logo_2D_Blue_x_0_0.png'
+  description: >
+    This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.
+    
+    Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+
+    # Introduction
+
+    An Environmental Data Retrevial (EDR) API provides a family of lightweight interfaces to access Environmental Data resources. Each resource addressed by an EDR API 
+    maps to a defined query pattern. EDR API query patterns can be thought of as discrete sampling geometries, conceptually in-line with the feature of interest in 
+    the Sensor Observation Service (SOS). EDR query patterns range from location-centric real or virtual observation use cases to sub-setting 4-dimensional data cubes 
+    along user-supplied sampling geometries. These query-pattern building blocks provide useful building blocks to enable composition of APIs that satisfy a wide range 
+    of environmental data use cases.
+
+tags:
+  - name: Capabilities
+    description: Essential characteristics of the information available from the API.
+  - name: Collection metadata
+    description: Description of the information available from the collections
+  - name: Instance metadata
+    description: Description of the information available from instances of a collection
+  - name: Collection data queries
+    description: Data queries available.
+  - name: Instance data queries
+    description: Data queries available on instances of the collection.
+
 paths:
   /:
     get:
@@ -2932,17 +2963,9 @@ components:
       in: query
       schema:
         type: string
-        example: CRS84      
+        example: CRS84          
 
-        
-tags:
-  - name: Capabilities
-    description: Essential characteristics of the information available from the API.
-  - name: Collection metadata
-    description: Description of the information available from the collections
-  - name: Instance metadata
-    description: Description of the information available from instances of a collection
-  - name: Collection data queries
-    description: Data queries available.
-  - name: Instance data queries
-    description: Data queries available on instances of the collection.
+
+servers:
+  - description: Example endpoint, not implemented
+    url: https://ogcapi.ogc.org/
