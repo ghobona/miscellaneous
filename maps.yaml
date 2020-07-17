@@ -102,7 +102,7 @@ components:
             - 20037508.3427892
             crs: http://www.opengis.net/def/crs/EPSG/0/3394
         cascaded:
-          type: number
+          type: boolean
           description: Indicates how main times the collection map has been retransmitted
             from another map service or API (cascading). It it is not present the
             collection is not cascaded.
