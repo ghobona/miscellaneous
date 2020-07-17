@@ -1,0 +1,311 @@
+openapi: 3.0.2
+info:
+  title: OGC API - Maps Building Blocks
+  description: |-
+    Common components used in the OGC API - Maps standards.
+
+    This document is also available in [GitHub](https://github.com/opengeospatial/OGC-API-Map-Tiles/tree/master/standard/openapi).
+  version: 1.0.0
+  contact:
+    name: Joan Maso
+    email: joan.maso@uab.cat
+  license:
+    name: OGC License
+    url: https://raw.githubusercontent.com/opengeospatial/OGC-API-Map-Tiles/master/LICENSE
+components:
+  schemas:
+    collection-link:
+      type: object
+      required:
+      - links
+      properties:
+        links:
+          type: array
+          items:
+            "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/schemas/link
+          example:
+          - "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/examples/link-collection-this
+          - "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/examples/link-collection-describedBy
+          - "$ref": "#/components/examples/link-collection-maps"
+    maps-link:
+      type: object
+      required:
+      - links
+      properties:
+        links:
+          type: array
+          items:
+            "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/schemas/link
+          example:
+          - "$ref": "#/components/examples/link-maps-this"
+          - "$ref": "#/components/examples/link-maps-map"
+          - "$ref": "#/components/examples/link-maps-info"
+    collection:
+      type: object
+      properties:
+        styles:
+          "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-map-styles/1.0.0#/components/schemas/style-set
+        defaultStyle:
+          "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-map-tiles/1.0.0#/components/schemas/defaultStyle
+    maps:
+      type: object
+      properties:
+        minScaleDenominador:
+          type: number
+          description: Minimum scale denominator (inclusive) for which it is appropriate
+            to generate a map of this collection. Requests outside this interval will
+            return an HTTP 404. If it is not present we will assume there is no limit.
+          example: 10
+        maxScaleDenominador:
+          type: number
+          description: Maximum scale denominator (inclusive) for which it is appropriate
+            to generate a map of this collection. Requests outside this interval will
+            return an HTTP 404 If it is not present we will assume there is no limit.
+          example: 10000000
+        recomendedFormat:
+          type: string
+          description: Recommended output formats for a map request. Depending of
+            the nature of the data, a format might be better than another. Categorical
+            data looks better in a PNG but continuos data and pictures are smaller
+            a JPEG. The map operation details all available formats for the OGC API
+            maps. In contrast, this is the better one for this type of information.
+            It would be one of the supported for the map operation
+          example: image/jpeg
+        crs:
+          description: The list of coordinate reference systems supported. The first
+            item is the default coordinate reference system.
+          type: array
+          items:
+            type: string
+          default:
+          - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+          example:
+          - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+          - http://www.opengis.net/def/crs/EPSG/0/4326
+        crsSpatialExtents:
+          type: array
+          description: Minimum spatial extent surrounding the spatial resource for
+            each CRS available
+          items:
+            "$ref": "#/components/schemas/spatialExtent"
+          example:
+          - bbox:
+            - -180
+            - -90
+            - 180
+            - 90
+            crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+          - bbox:
+            - -20037508.3427892
+            - -20037508.3427892
+            - 20037508.3427892
+            - 20037508.3427892
+            crs: http://www.opengis.net/def/crs/EPSG/0/3394
+        cascaded:
+          type: number
+          description: Indicates how main times the collection map has been retransmitted
+            from another map service or API (cascading). It it is not present the
+            collection is not cascaded.
+          example: 0
+          default: 0
+        opaque:
+          type: boolean
+          description: Indicates whether the map data represents features that probably
+            do not completely fill space shows the background opaque (true) or transparent(false).
+          example: false
+          default: false
+        noSubsets:
+          type: boolean
+          description: Indicates whether the server can produce a map that is a subset
+            of the full bounding box.
+          example: false
+        fixedWidth:
+          type: number
+          description: Indicates that the server can only produce map of a fixed width
+            instead of an arbitrary width
+        fixedHeight:
+          type: number
+          description: Indicates that the server can only produce map of a fixed height
+            instead of an arbitrary height
+        styles:
+          "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-map-styles/1.0.0#/components/schemas/style-set
+        infoTemplates:
+          "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-map-tiles/1.0.0#/components/schemas/infoTemplates
+    spatialExtent:
+      description: The spatial extent of the element in the collection.
+      type: object
+      required:
+      - bbox
+      properties:
+        bbox:
+          "$ref": "#/components/schemas/bbox"
+        crs:
+          "$ref": "#/components/schemas/crs"
+    bbox:
+      description: |-
+        One or more bounding boxes that describe the spatial extent of the dataset.
+        In the Core only a single bounding box is supported. Extensions may support
+        additional areas. If multiple areas are provided, the union of the bounding
+        boxes describes the spatial extent.
+      type: array
+      minItems: 1
+      items:
+        description: |-
+          West, south, east, north edges of the bounding box. The coordinates
+          are in the coordinate reference system specified in `crs`. By default
+          this is WGS 84 longitude/latitude.
+        type: array
+        minItems: 4
+        maxItems: 6
+        items:
+          type: number
+        example:
+        - - 7.01
+          - 50.63
+          - 7.22
+          - 50.78
+    crs:
+      description: |-
+        Coordinate reference system of the coordinates in the spatial extent
+        (property `bbox`). The default reference system is WGS 84 longitude/latitude.
+        In the Core this is the only supported coordinate reference system.
+        Extensions may support additional coordinate reference systems and add
+        additional enum values.
+      type: string
+      enum:
+      - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+      default: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    collection-patch:
+      type: object
+      properties:
+        styles:
+          "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-map-styles/1.0.0#/components/schemas/style-set
+        defaultStyle:
+          type: string
+          nullable: true
+          description: the style id of a recommended default style to use for this
+            collection
+          example: topographic
+  responses:
+    maps:
+      description: Description of the tiles.
+      content:
+        application/json:
+          schema:
+            "$ref": "#/components/schemas/maps"
+    info:
+      description: Information in an point of a map or a tiles.
+      content:
+        application/json:
+          example:
+            properties:
+              name: unvented
+              positionalAccuracy: 30
+  parameters:
+    mapId:
+      name: mapId
+      in: path
+      description: Local identifier of a specific map created with a post operation
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+    crsId:
+      name: crsId
+      in: path
+      description: Local identifier of a specific CRS. A list of all available CRSIds
+        can be found under the /CRS path. The default CRS is WGS 84.
+      required: true
+      schema:
+        type: string
+      example: WGS84
+    width:
+      name: width
+      in: query
+      description: Width in pixels of map picture.
+      required: false
+      style: form
+      explode: false
+      schema:
+        type: number
+        default: 256
+    height:
+      name: height
+      in: query
+      description: Height in pixels of map picture.
+      required: false
+      style: form
+      explode: false
+      schema:
+        type: number
+        default: 256
+    transparent:
+      name: transparent
+      in: query
+      description: Background transparency of map (default=true).
+      required: false
+      style: form
+      explode: false
+      schema:
+        type: boolean
+        default: true
+    bgcolor:
+      name: bgcolor
+      in: query
+      description: Hexadecimal red-green-blue[-alpha] color value for the background
+        color (default=0xFFFFFF). If alpha is not specified "opaque" opacity is assumed.
+      required: false
+      style: form
+      explode: false
+      schema:
+        type: string
+        default: '0xFFFFFF'
+    map-crs:
+      name: crs
+      in: query
+      description: |-
+        CRSId used to render the map. It is also the CRS of the bbox parameter.
+        You can only ask for CRSs that are valid for the collectionId.
+      required: false
+      style: form
+      explode: false
+      schema:
+        type: string
+        example: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        default: http://www.opengis.net/def/crs/EPSG/0/3857
+  examples:
+    link-landingPage-maps:
+      href: http://data.example.org/maps
+      rel: map
+      type: application/json
+      title: Link to information on maps combining more than one collection
+    link-collection-maps:
+      href: http://data.example.com/collections/buildings/maps
+      rel: map
+      type: application/json
+    link-maps-this:
+      href: http://data.example.com/collections/buildings/maps
+      rel: self
+      type: application/json
+    link-maps-map:
+      href: http://data.example.com/collections/buildings/maps/brown
+      rel: item
+      type: image/png
+    link-maps-info:
+      href: http://data.example.com/collections/buildings/maps/brown/info
+      rel: attributes
+      type: text/html
+    link-maps-col-this:
+      href: http://data.example.com/maps
+      rel: self
+      type: application/json
+    link-maps-col-map:
+      href: http://data.example.com/map
+      rel: map
+      type: image/png
+    link-maps-col-info:
+      href: http://data.example.com/map/info
+      rel: attributes
+      type: text/html
+
