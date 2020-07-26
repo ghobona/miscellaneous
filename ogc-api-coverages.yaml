@@ -1,0 +1,66 @@
+---
+openapi: 3.0.2
+info:
+  title: OGC API Building Blocks
+  description: |-
+    Common components used in the OGC API Coverages of standards.
+    Deeply inspired in Stephan MeiÃŸl OGC API Coverages work.
+    https://raw.githubusercontent.com/opengeospatial/ogc_api_coverages/master/core/openapi/openapi.yaml
+
+    This document is also available in [GitHub](https://github.com/opengeospatial/OGC-API-Map-Tiles/tree/master/standard/openapi).
+  version: 1.0.0
+  contact:
+    name: Joan Maso
+    email: joan.maso@uab.cat
+  license:
+    name: OGC License
+    url: https://raw.githubusercontent.com/opengeospatial/OGC-API-Map-Tiles/master/LICENSE
+components:
+  schemas:
+    collection-link:
+      type: object
+      required:
+      - links
+      properties:
+        links:
+          type: array
+          items:
+            "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/schemas/link
+          example:
+          - "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/examples/link-collection-this
+          - "$ref": https://api.swaggerhub.com/domains/UAB-CREAF/ogc-api-common/1.0.0#/components/examples/link-collection-describedBy
+          - "$ref": "#/components/examples/link-collection-rangeType"
+          - "$ref": "#/components/examples/link-collection-domainSet"
+    domainSetJSON:
+      description: TBD
+      required:
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+    rangeTypeJSON:
+      description: TBD
+      type: object
+  parameters:
+    coverageId:
+      name: coverageId
+      in: path
+      description: Local identifier of a specific coverage
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+  examples:
+    link-collection-rangeType:
+      href: http://data.example.com/collections/satellite/coverages/sentinel2/rangeType
+      rel: rangeType
+      title: Retrieve the semantincs of the data in the coverage
+      type: application/json
+    link-collection-domainSet:
+      href: http://data.example.com/collections/satellite/coverages/sentinel2/domainSet
+      rel: domainSet
+      title: Retrieve the dimensions of the coverage
+      type: application/json
+
