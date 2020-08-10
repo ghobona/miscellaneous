@@ -1,6 +1,3 @@
-title: domainSet
-description: The domainSet describes the *direct positions* of the coverage, i.e.,
-  the locations for which values are available.
 type: object
 required:
   - type
