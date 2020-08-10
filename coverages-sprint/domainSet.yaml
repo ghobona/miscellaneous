@@ -15,3 +15,12 @@ properties:
       type:
         enum:
         - GeneralGridCoverageType
+      id:
+        type: string
+      srsName:
+        type: string
+        format: uri
+      axisLabels:
+        type: array
+        items:
+          type: string
