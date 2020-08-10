@@ -111,3 +111,71 @@ properties:
                   - number
                   - string
                   - boolean
+      displacement:
+        #title: Displacement
+        #description: A Displacement is a warped axis nest where points on the
+        #  grid all have their individual direct position coordinates. The sequenceRule
+        #  element describes linearization order.
+        type: object
+        oneOf:
+        - required:
+          - type
+          - axisLabels
+          - uomLabels
+          - coordinates
+          properties:
+            type:
+              type: string
+              enum:
+              - DisplacementAxisNestType
+            id:
+              type: string
+            axisLabel:
+              type: string
+            srsName:
+              type: string
+              format: uri
+            axisLabels:
+              type: array
+              items:
+                type: string
+            uomLabels:
+              type: array
+              items:
+                type: string
+            coordinates:
+              type: array
+              items:
+                type: array
+                items:
+                  type:
+                  - number
+                  - string
+                  - boolean
+        - required:
+          - type
+          - axisLabels
+          - uomLabels
+          - coordinatesRef
+          properties:
+            type:
+              enum:
+              - DisplacementAxisNestTypeRef
+            id:
+              type: string
+            axisLabel:
+              type: string
+            srsName:
+              type: string
+              format: uri
+            axisLabels:
+              type: array
+              items:
+                type: string
+            uomLabels:
+              type: array
+              items:
+                type: string
+            coordinatesRef:
+              type: string
+              format: uri
