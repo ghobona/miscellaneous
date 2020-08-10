@@ -6,3 +6,12 @@ properties:
     type: string
     enum:
     - DomainSetType
+  generalGrid:
+    type: object
+    required:
+    - type
+    additionalProperties: false
+    properties:
+      type:
+        enum:
+        - GeneralGridCoverageType
