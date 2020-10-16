@@ -32,8 +32,8 @@
   <xs:complexContent>
     <xs:extension base="gml:AbstractFeatureType">
       <xs:sequence>
-        <xs:element ref="gml:Polygon" nillable="true" minOccurs="0" maxOccurs="1"/>
-        <xs:element ref="gml:MultiPolygon" nillable="true" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="gml:Polygon" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="gml:MultiPolygon" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
