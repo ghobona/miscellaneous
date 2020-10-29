@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//sites.google.com/ucr.edu/spatialapi20
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20201103T140000Z
+DTEND:20201103T210000Z
+TRANSP:TRANSPARENT
+SUMMARY: SpatialAPI 2020 Workshop
+DESCRIPTION:Please join the 2nd ACM SIGSPATIAL International Workshop on Geospatial Data Access and Processing APIs (SpatialAPI 2020). Slack channel https://sigspatial2020.slack.com/
+URL;VALUE=URI:https://sites.google.com/ucr.edu/spatialapi20
+UID:https://sites.google.com/ucr.edu/spatialapi20
+DTSTAMP:20201029T130000Z
+END:VEVENT
+END:VCALENDAR
