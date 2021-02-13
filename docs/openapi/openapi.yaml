@@ -30,7 +30,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/landingPage.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/landingPage.json
             text/html:
               schema:
                 type: string
@@ -50,7 +50,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/confClasses.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/confClasses.json
             text/html:
               schema:
                 type: string
@@ -68,7 +68,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/groups.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/groups.json
             text/html:
               schema:
                 type: string
@@ -77,7 +77,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -96,7 +96,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/groups.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/groups.json
             text/html:
               schema:
                 type: string
@@ -105,7 +105,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -125,7 +125,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/collections.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/collections.json
             text/html:
               schema:
                 type: string
@@ -134,7 +134,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -157,7 +157,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/collection.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/collection.json
             text/html:
               schema:
                 type: string
@@ -166,7 +166,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -195,10 +195,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -210,28 +210,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -260,10 +260,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -275,28 +275,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -325,10 +325,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -340,28 +340,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -392,10 +392,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -407,28 +407,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -456,10 +456,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -471,28 +471,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -523,10 +523,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -538,28 +538,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -581,7 +581,7 @@ paths:
           content:
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/json: {}
             text/xml: {}
         '202':
@@ -593,7 +593,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         '413':
@@ -601,7 +601,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         default:
@@ -609,7 +609,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -640,7 +640,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         '413':
@@ -648,7 +648,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         default:
@@ -656,7 +656,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -675,7 +675,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/instances.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/instances.json
             text/html:
               schema:
                 type: string
@@ -684,7 +684,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -715,10 +715,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -730,28 +730,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -782,10 +782,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -797,28 +797,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -848,10 +848,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -863,28 +863,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -916,10 +916,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -931,28 +931,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -981,10 +981,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -996,28 +996,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -1049,10 +1049,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -1064,28 +1064,28 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '404':
           description: Requested data not found.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -1106,7 +1106,7 @@ paths:
           content:
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             text/xml: {}
         '202':
           description: Data request still being processed
@@ -1117,7 +1117,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         '413':
@@ -1125,7 +1125,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         default:
@@ -1133,7 +1133,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -1157,10 +1157,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -1172,7 +1172,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         '413':
@@ -1180,7 +1180,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         default:
@@ -1188,7 +1188,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -1211,7 +1211,7 @@ paths:
           content:
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             text/xml: {}
         '202':
           description: Data request still being processed
@@ -1222,7 +1222,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         '413':
@@ -1230,7 +1230,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             application/x-netcdf: {}
             text/xml: {}
         default:
@@ -1238,7 +1238,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
@@ -1263,10 +1263,10 @@ paths:
           content:
             #application/prs.coverage+json:
             #  schema:
-            #    "$ref": schemas/coverageJSON.json
+            #    "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": schemas/edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -1278,21 +1278,21 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         '413':
           description: Requested data volume to large to be handled by this service.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/xml: {}
         default:
           description: An error occured.
           content:
             application/json:
               schema:
-                "$ref": schemas/exception.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/exception.json
             text/html:
               schema:
                 type: string
