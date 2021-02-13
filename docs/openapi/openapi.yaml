@@ -35,7 +35,7 @@ paths:
               schema:
                 type: string
       parameters:
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/conformance":
     get:
       tags:
@@ -55,7 +55,7 @@ paths:
               schema:
                 type: string
       parameters:
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/groups":
     get:
       tags:
@@ -82,7 +82,7 @@ paths:
               schema:
                 type: string
       parameters:
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/groups/{groupId}":
     get:
       tags:
@@ -110,8 +110,8 @@ paths:
               schema:
                 type: string
     parameters:
-      - "$ref": parameters/groupId.json
-      - "$ref": parameters/f.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/groupId.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/collections":
     get:
       tags:
@@ -139,9 +139,9 @@ paths:
               schema:
                 type: string
     parameters:
-      - "$ref": parameters/bbox.json
-      - "$ref": parameters/datetime.json
-      - "$ref": parameters/f.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/bbox.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/collections/{collectionId}":
     get:
       tags:
@@ -171,8 +171,8 @@ paths:
               schema:
                 type: string
     parameters:
-      - "$ref": parameters/collectionId.json
-      - "$ref": parameters/f.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/collections/{collectionId}/position":
     get:
       tags:
@@ -181,13 +181,13 @@ paths:
       description: Query end point for position queries
       operationId: getDataForPoint
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/pointCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/pointCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -244,15 +244,15 @@ paths:
         a point queries
       operationId: getDataForRadius
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/radiusCoords.json
-        - "$ref": parameters/within.json
-        - "$ref": parameters/within-units.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/radiusCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/within.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/within-units.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -309,15 +309,15 @@ paths:
       description: Return the data values for the data area defined by the query parameters
       operationId: GetDataForArea
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/areaCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/resolution-x.json
-        - "$ref": parameters/resolution-y.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/areaCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-x.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-y.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -374,17 +374,17 @@ paths:
       description: Return the data values for the data Cube defined by the query parameters
       operationId: GetDataForCube
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/cubeCoords.json
-        - "$ref": parameters/min-z.json
-        - "$ref": parameters/max-z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/resolution-x.json
-        - "$ref": parameters/resolution-y.json
-        - "$ref": parameters/resolution-z.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/cubeCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/min-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/max-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-x.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-y.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -442,13 +442,13 @@ paths:
         parameters
       operationId: GetDataForTrajectory
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/trajectoryCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/trajectoryCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -505,17 +505,17 @@ paths:
       description: Return the data values for the Corridor defined by the query parameters
       operationId: GetDataForCorridor
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/trajectoryCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/corridor-width.json
-        - "$ref": parameters/corridor-height.json
-        - "$ref": parameters/resolution-x.json
-        - "$ref": parameters/resolution-z.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/trajectoryCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/corridor-width.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/corridor-height.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-x.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -572,9 +572,9 @@ paths:
         identifier
       operationId: ListDataItems
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/bbox.json
-        - "$ref": parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/bbox.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
       responses:
         '200':
           description: List of pre-existing items available for retrieval
@@ -622,8 +622,8 @@ paths:
         using a unique identifier
       operationId: GetDataForItem
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/itemId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/itemId.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -689,8 +689,8 @@ paths:
               schema:
                 type: string
     parameters:
-      - "$ref": parameters/collectionId.json
-      - "$ref": parameters/f.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+      - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
   "/collections/{collectionId}/instances/{instanceId}/position":
     get:
       tags:
@@ -700,14 +700,14 @@ paths:
       description: Query end point for position queries
       operationId: getInstanceDataForPoint
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/pointCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/pointCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -765,16 +765,16 @@ paths:
         defined point location queries
       operationId: getInstanceDataForRadius
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/radiusCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/within.json
-        - "$ref": parameters/within-units.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/radiusCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/within.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/within-units.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -831,16 +831,16 @@ paths:
       description: Return the data values for the data area defined by the query parameters
       operationId: GetInstanceDataForArea
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/areaCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/resolution-x.json
-        - "$ref": parameters/resolution-y.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/areaCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-x.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-y.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -897,18 +897,18 @@ paths:
       description: Return the data values for the data Cube defined by the query parameters
       operationId: GetInstanceDataForCube
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/cubeCoords.json
-        - "$ref": parameters/min-z.json
-        - "$ref": parameters/max-z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/resolution-x.json
-        - "$ref": parameters/resolution-y.json
-        - "$ref": parameters/resolution-z.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/cubeCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/min-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/max-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-x.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-y.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -966,14 +966,14 @@ paths:
         parameters
       operationId: GetInstanceDataForTrajectory
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/trajectoryCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/trajectoryCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -1030,18 +1030,18 @@ paths:
       description: Return the data values for the Corridor defined by the query parameters
       operationId: GetInstanceDataForCorridor
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/trajectoryCoords.json
-        - "$ref": parameters/z.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/parameter-name.json
-        - "$ref": parameters/corridor-width.json
-        - "$ref": parameters/corridor-height.json
-        - "$ref": parameters/resolution-x.json
-        - "$ref": parameters/resolution-z.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/trajectoryCoords.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/parameter-name.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/corridor-width.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/corridor-height.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-x.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/resolution-z.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data ranges required to construct valid queries for the choosen
@@ -1097,9 +1097,9 @@ paths:
       description: List the locations available for the collection
       operationId: ListCollectionDataLocations
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/bbox.json
-        - "$ref": parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/bbox.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
       responses:
         '200':
           description: List of predefined locations available from the collection
@@ -1146,11 +1146,11 @@ paths:
       description: Return data the for the location defined by locid
       operationId: GetCollectionDataForLocation
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/locId.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/locId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data returned by querying by location identifier
@@ -1200,10 +1200,10 @@ paths:
       description: List the locations available for the instance of the collection
       operationId: ListDataInstanceLocations
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/bbox.json
-        - "$ref": parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/bbox.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
       responses:
         '200':
           description: List of predefined locations available from the instance of
@@ -1251,12 +1251,12 @@ paths:
       description: Return data the for the location defined by locid
       operationId: GetInstanceDataForLocation
       parameters:
-        - "$ref": parameters/collectionId.json
-        - "$ref": parameters/instanceId.json
-        - "$ref": parameters/locId.json
-        - "$ref": parameters/datetime.json
-        - "$ref": parameters/crs.json
-        - "$ref": parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/collectionId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/instanceId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/locId.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/datetime.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/crs.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
       responses:
         '200':
           description: Data returned when querying by identifier
