@@ -50,7 +50,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": confClasses.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/confClasses.json
             text/html:
               schema:
                 type: string
