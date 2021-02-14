@@ -157,7 +157,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": collection.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/collection.json
             text/html:
               schema:
                 type: string
