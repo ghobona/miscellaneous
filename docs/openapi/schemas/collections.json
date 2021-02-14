@@ -8,7 +8,7 @@
       "links": {
         "type": "array",
         "items": {
-          "$ref": "link.json"
+          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/link.json"
         },
         "example": [
           {
@@ -28,8 +28,8 @@
             "hreflang": "en",
             "rel": "alternate",
             "type": "application/xml"
-          }          
-        ]      
+          }
+        ]
       },
       "collections": {
         "type": "array",
