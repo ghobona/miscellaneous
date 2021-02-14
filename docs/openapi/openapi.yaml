@@ -30,12 +30,12 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/landingPage.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/landingPage.yaml
             text/html:
               schema:
                 type: string
       parameters:
-        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.json
+        - "$ref": https://ghobona.github.io/miscellaneous/openapi/parameters/f.yaml
 tags:
   - name: Capabilities
     description: Essential characteristics of the information available from the API.

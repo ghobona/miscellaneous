@@ -12,7 +12,7 @@ properties:
   links:
     type: array
     items:
-      $ref: link.yaml
+      $ref: https://ghobona.github.io/miscellaneous/openapi/schemas/link.yaml
     example:
       - href: http://www.example.org/edr/api
         hreflang: en
@@ -31,7 +31,7 @@ properties:
         title: ""
   keywords:
     type: array
-    items: 
+    items:
       type: string
     example:
       - Temperature
