@@ -14,20 +14,20 @@
     "features": {
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/featureGeoJSON.json"
+        "$ref": "featureGeoJSON.json"
       }
     },
     "parameters": {
       "description": "list of the data parameters available in the collection",
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/parameter.json"
+        "$ref": "parameter.json"
       }
     },
     "links": {
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/link.json"
+        "$ref": "link.json"
       }
     },
     "timeStamp": {
@@ -37,10 +37,10 @@
       "example": "2017-08-17T08:05:32Z"
     },
     "numberMatched": {
-      "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/numberMatched.json"
+      "$ref": "numberMatched.json"
     },
     "numberReturned": {
-      "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/numberReturned.json"
+      "$ref": "numberReturned.json"
     }
   }
 }

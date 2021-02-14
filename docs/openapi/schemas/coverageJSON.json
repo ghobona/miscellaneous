@@ -65,7 +65,7 @@
           "type": "object",
           "properties": {
             "composite": {
-              "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/compositeAxes.json"
+              "$ref": "compositeAxes.json"
             },
             "x": {
               "title": "X axis values",
@@ -218,7 +218,7 @@
       "parameters": {
         "type": "object",
         "additionalProperties": {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/parameter.json"
+          "$ref": "parameter.json"
         }
       },
       "ranges": {

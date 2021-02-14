@@ -15,30 +15,30 @@
     "geometry": {
       "oneOf": [
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/pointGeoJSON.json"
+          "$ref": "pointGeoJSON.json"
         },
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/multipointGeoJSON.json"
+          "$ref": "multipointGeoJSON.json"
         },
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/linestringGeoJSON.json"
+          "$ref": "linestringGeoJSON.json"
         },
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/multilinestringGeoJSON.json"
+          "$ref": "multilinestringGeoJSON.json"
         },
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/polygonGeoJSON.json"
+          "$ref": "polygonGeoJSON.json"
         },
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/multipolygonGeoJSON.json"
+          "$ref": "multipolygonGeoJSON.json"
         },
         {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/geometrycollectionGeoJSON.json"
+          "$ref": "geometrycollectionGeoJSON.json"
         }
       ]
     },
     "properties": {
-      "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/edrProperties.json"
+      "$ref": "edrProperties.json"
     },
     "id": {
       "oneOf": [
@@ -53,7 +53,7 @@
     "links": {
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/link.json"
+        "$ref": "link.json"
       }
     }
   }

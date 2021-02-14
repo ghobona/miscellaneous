@@ -8,7 +8,7 @@
     "links": {
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/link.json"
+        "$ref": "link.json"
       },
       "example": [
         {
@@ -78,13 +78,13 @@
       }
     },
     "extent": {
-      "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/extent.json"
+      "$ref": "extent.json"
     },
     "crs": {
       "description": "list of the coordinate reference systems the collection results can be produced in",
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/crsObject.json"
+        "$ref": "crsObject.json"
       }
     },
     "referencemetadata": {
@@ -120,7 +120,7 @@
       "type": "object",
       "additionalProperties": {
         "items": {
-          "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/parameter.json"
+          "$ref": "parameter.json"
         }
       }
     }
