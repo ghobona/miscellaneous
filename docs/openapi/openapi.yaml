@@ -198,7 +198,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -263,7 +263,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -328,7 +328,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -395,7 +395,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -459,7 +459,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -526,7 +526,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -581,7 +581,7 @@ paths:
           content:
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/json: {}
             text/xml: {}
         '202':
@@ -718,7 +718,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -785,7 +785,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -851,7 +851,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -919,7 +919,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -984,7 +984,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -1052,7 +1052,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -1106,7 +1106,7 @@ paths:
           content:
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             text/xml: {}
         '202':
           description: Data request still being processed
@@ -1160,7 +1160,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
@@ -1211,7 +1211,7 @@ paths:
           content:
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             text/xml: {}
         '202':
           description: Data request still being processed
@@ -1266,7 +1266,7 @@ paths:
             #    "$ref": coverageJSON.json
             application/geo+json:
               schema:
-                "$ref": edrFeatureCollectionGeoJSON.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/edrFeatureCollectionGeoJSON.json
             application/x-netcdf: {}
             text/xml: {}
         '202':
