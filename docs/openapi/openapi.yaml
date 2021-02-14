@@ -68,7 +68,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": groups.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/groups.json
             text/html:
               schema:
                 type: string
@@ -96,7 +96,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": groups.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/groups.json
             text/html:
               schema:
                 type: string
