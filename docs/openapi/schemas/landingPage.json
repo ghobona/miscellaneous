@@ -15,7 +15,7 @@
     "links": {
       "type": "array",
       "items": {
-        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/https://ghobona.github.io/miscellaneous/openapi/schemas/link.json"
+        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/link.json"
       },
       "example": [
         {
