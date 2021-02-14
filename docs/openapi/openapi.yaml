@@ -675,7 +675,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": instances.json
+                "$ref": https://ghobona.github.io/miscellaneous/openapi/schemas/instances.json
             text/html:
               schema:
                 type: string
