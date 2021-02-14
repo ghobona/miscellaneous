@@ -16,25 +16,25 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "pointGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/pointGeoJSON.json"
           },
           {
-            "$ref": "multipointGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/multipointGeoJSON.json"
           },
           {
-            "$ref": "linestringGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/linestringGeoJSON.json"
           },
           {
-            "$ref": "multilinestringGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/multilinestringGeoJSON.json"
           },
           {
-            "$ref": "polygonGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/polygonGeoJSON.json"
           },
           {
-            "$ref": "multipolygonGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/multipolygonGeoJSON.json"
           },
           {
-            "$ref": "geometrycollectionGeoJSON.json"
+            "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/geometrycollectionGeoJSON.json"
           }
         ]
       }

@@ -25,10 +25,10 @@
         }
       },
       "unit": {
-        "$ref": "units.json"
+        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/units.json"
       },
       "observedProperty": {
-        "$ref": "observedProperty.json"
+        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/observedProperty.json"
       },
       "categoryEncoding": {
         "type": "object",
@@ -47,7 +47,7 @@
         }
       },
       "extent": {
-        "$ref": "parameterExtent.json"
+        "$ref": "https://ghobona.github.io/miscellaneous/openapi/schemas/parameterExtent.json"
       },
       "id": {
         "description": "Unique ID of the parameter, this is the value used for querying the data",
