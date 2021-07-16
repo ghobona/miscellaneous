@@ -31,9 +31,9 @@ paths:
         - Capabilities
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/LandingPage.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/LandingPage.yaml"
         500:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ServerError.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ServerError.yaml"
   /conformance:
     get:
       summary: information about standards that this API conforms to
@@ -57,9 +57,9 @@ paths:
         - ConformanceDeclaration
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ConformanceDeclaration.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ConformanceDeclaration.yaml"
         500:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ServerError.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ServerError.yaml"
   /processes:
     get:
       summary: retrieve the list of available processes
@@ -72,7 +72,7 @@ paths:
         - ProcessList
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ProcessList.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ProcessList.yaml"
   /processes/{processId}:
     get:
       summary: retrieve a process description
@@ -86,12 +86,12 @@ paths:
       tags:
         - ProcessDescription
       parameters:
-        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/parameters/processId.yaml"
+        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/parameters/processId.yaml"
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ProcessDescription.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ProcessDescription.yaml"
         404:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/NotFound.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/NotFound.yaml"
   /jobs:
     get:
       summary: retrieve the list of jobs.
@@ -104,9 +104,9 @@ paths:
         - JobList
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/JobList.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/JobList.yaml"
         404:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/NotFound.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/NotFound.yaml"
   /processes/{processId}/execution:
     post:
       summary: execute a process.
@@ -118,23 +118,23 @@ paths:
       tags:
         - Execute
       parameters:
-        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/parameters/processId.yaml"
+        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/parameters/processId.yaml"
       requestBody:
         description: Mandatory execute request JSON
         required: true
         content:
           application/json:
             schema:
-              $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/schemas/execute.yaml"
+              $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/schemas/execute.yaml"
       responses:
         200:
-          $ref: 'https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ExecuteSync.yaml'
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ExecuteSync.yaml"
         201:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ExecuteAsync.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ExecuteAsync.yaml"
         404:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/NotFound.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/NotFound.yaml"
         500:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ServerError.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ServerError.yaml"
       callbacks:
         jobCompleted:
           "{$request.body#/subscriber/successUri}":
@@ -143,7 +143,7 @@ paths:
                 content:
                   application/json:
                     schema:
-                      $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/schemas/results.yaml"
+                      $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/schemas/results.yaml"
               responses:
                 200:
                   description: Results received successfully
@@ -158,14 +158,14 @@ paths:
       tags:
         - Status
       parameters:
-        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/parameters/jobId.yaml"
+        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/parameters/jobId.yaml"
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/Status.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/Status.yaml"
         404:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/NotFound.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/NotFound.yaml"
         500:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ServerError.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ServerError.yaml"
     delete:
       summary: cancel a job execution, remove a finished job
       description: |
@@ -176,14 +176,14 @@ paths:
       tags:
         - Dismiss
       parameters:
-        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/parameters/jobId.yaml"
+        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/parameters/jobId.yaml"
       responses:
         200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/Status.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/Status.yaml"
         404:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/NotFound.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/NotFound.yaml"
         500:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ServerError.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ServerError.yaml"
   /jobs/{jobId}/results:
     get:
       summary: retrieve the result(s) of a job
@@ -195,11 +195,11 @@ paths:
       tags:
         - Result
       parameters:
-        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/parameters/jobId.yaml"
+        - $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/parameters/jobId.yaml"
       responses:
-        200:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/Results.yaml"
+        #200:
+        #  $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/Results.yaml"
         404:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/NotFound.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/NotFound.yaml"
         500:
-          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api/openapi/responses/ServerError.yaml"
+          $ref: "https://raw.githubusercontent.com/ghobona/miscellaneous/master/processes-api-sprint/openapi/responses/ServerError.yaml"
